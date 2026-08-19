@@ -1,99 +1,52 @@
-<div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=8ED1FC&center=true&vCenter=true&width=650&lines=Building+grounded+RAG+%26+agent+systems;Eval-driven.+Source-grounded.+No+hallucinated+claims.;Ex+smart-contract+security+researcher)](https://git.io/typing-svg)
-
-❄ ⋅ ❅ ⋅ ⋅ ❆ ⋅ ❄ ⋅ ❅ ⋅ ⋅ ❆ ⋅ ❄ ⋅ ❅ ⋅ ⋅ ❆ ⋅ ❄
-
-</div>
-
-<table>
-<tr>
-<td width="40%" valign="top">
+# About Me:
 
 ```
-              \   |   /
-           *   \  |  /   *
-             .  \ | /  .
-          ----.--❄--.----
-             .  / | \  .
-           *   /  |  \   *
-              /   |   \
-
-           .  * SNOW *  .
+ahmed@snow ~ % whoami
+──────────────────────────────────
+identity     Ahmed Gamal — aka Snow
+role         AI Engineer
+focus        Agentic RAG · Evaluation · Guardrails
+stack        LangGraph · Qdrant · Docling · Python
+languages    English, Arabic (native)
+prior_life   Smart contract security researcher
+──────────────────────────────────
 ```
 
-</td>
-<td width="60%" valign="top">
+I build AI systems for production, verification layers, adversarial evals, and assuming the model will be wrong somewhere
 
-```
-ahmed@snow
------------------------------------
-OS         : LangGraph Agent Runtime
-Host       : AI / LLM Engineer
-Kernel     : Python 3.11
-Shell      : RAG + eval-driven
-Uptime     : shipping since 2025
-Languages  : Python, Solidity
-Focus      : RAG · Agents · Evaluation
-Currently  : Grounded Clinical Agent
-Prior life : Smart-contract security
-Contact    : 0xahmed.gamal@gmail.com
-```
+My focus is agentic RAG with a self-correction layer, retrieval with Qdrant, document parsing with Docling, orchestration with LangGraph, and a dual-LLM verification loop that checks every generated claim against its source before it reaches the user.
 
-</td>
-</tr>
-</table>
 
----
 
-### ❄ Currently building
+I treat evaluation as core infrastructure, retrieval metrics, faithfulness scoring, and adversarial robustness        
 
-**[Grounded Clinical Agent](https://github.com/0xSnow-1/Grounded-Clinical-Agent)**
-— a self-correcting RAG agent answering dental clinical questions strictly
-from CDC, WHO, and USPSTF guidelines. No hallucinated statistics, no
-unverifiable claims — enforced by an automated verification loop, not a
-system prompt.
+testing are things I build alongside the system, not after it ships.
 
-`92.5% Hit@3` · `0.872 MRR` · `95.0% faithfulness` · `85.4% answer relevance` · `80.0% safety defense`
-— 40-case benchmark, baseline B0.
 
----
 
-### ❆ Selected work
+Recent work involves a clinical decision-support agent that routes queries, generates cited answers and runs an independent groundness check with automatic retry and human escalation on failure, benchmarked on a 40-question clinical eval set and an 8-category adversarial safety suite. Also built a 6-agent nutrition assistant with LangGraph, PostgreSQL-backed memory, and an LLM-as-judge gate that rejects low-quality outputs before they're returned.
 
-| Project | What it does | Stack |
-|---|---|---|
-| [**Grounded Clinical Agent**](https://github.com/0xSnow-1/Grounded-Clinical-Agent) | Cyclic LangGraph workflow — routes, retrieves, checks claim-groundedness, retries unsupported answers, escalates to human review after the retry limit | LangGraph, Qdrant, FastAPI, AG-UI, Bedrock/Claude Haiku |
-| [**NutriMind**](https://github.com/0xSnow-1/NutriMind) | 6-agent nutrition assistant. LLM-as-judge gate regenerates plans scoring below 7/10; a caloric-safety interrupt flags 3+ consecutive days of under-eating for human review | LangGraph, LangSmith, PostgreSQL, Streamlit |
-| [**agentic-support-triage**](https://github.com/0xSnow-1/agentic-support-triage) | Supervisor-routed support triage agent — typed outputs, secured tools, deterministic evals, LangSmith tracing | LangGraph, LangChain, LangSmith |
-| [**shipment-exception-triage-agent**](https://github.com/0xSnow-1/shipment-exception-triage-agent) | Entry for Single Grain Career's "Beat Claude" agentic challenge | Python |
 
----
 
-### ❅ Stack
+Self-taught. Currently deep in BM25 Implementation Hybrid Retrieval + Reciprocal Rank Fusion   (RRF), Health and Law Industry including Better Evaluation Harnesses.
 
-| Area | Core — shipped with | Also used |
-|---|---|---|
-| Orchestration | LangGraph, LangChain | — |
-| Retrieval | Qdrant | — |
-| Serving | FastAPI, AG-UI | — |
-| Data | PostgreSQL | SQLite |
-| Models | Claude (AWS Bedrock) | OpenAI, Groq, Gemini, local models |
-| Eval & observability | LLM-as-judge, Hit@3 / MRR / faithfulness, LangSmith | — |
-| Security | Slither, Foundry (smart-contract auditing) | — |
 
----
 
-<div align="center">
+A year in retail sales taught me how to translate technical complexity into terms a non-technical person can actually act on, a skill I think matters as much in AI engineering as the code itself.
 
-⚡ 2025–2026: audited Solidity contracts for reentrancy and access-control
-bugs in competitive audits. "Find the specific way this breaks" transfers
-cleanly to LLM eval design — same mindset, different failure modes.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0xSnow-1/0xSnow-1/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/0xSnow-1/0xSnow-1/output/github-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/0xSnow-1/0xSnow-1/output/github-snake.svg" />
-</picture>
 
-</div>
+Open to AI Engineer roles, remote or on-site. If you're building with LLMs and care about       
+
+proving they work, not just that they respond, let's talk.
+
+
+## 🌐 Socials:
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/hamido_1x) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/ahmed-gamal-363b47307) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/0xSnowEth) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:0xahmed.gamal@gmail.com) 
+
+# 💻 Tech Stack:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
+![](https://github-readme-stats.shion.dev/api/top-langs/?username=0xSnow-1&theme=swift&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
