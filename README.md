@@ -1,12 +1,12 @@
 ```
 ahmed@snow ~ % whoami
 ──────────────────────────────────
-identity     Ahmed Gamal — aka Snow
-role         AI Engineer
-focus        Agentic RAG · Evaluation · Guardrails
-stack        LangGraph · Qdrant · Docling · Python
-languages    English, Arabic (native)
-prior_life   Smart contract security researcher
+Name:    Ahmed Gamal 
+role:        AI Engineer
+focus:        Agentic RAG · Evaluation · Guardrails
+stack:        LangGraph · Qdrant · Docling · Python
+languages:    English, Arabic (native)
+prior_life:   Smart contract security researcher
 ──────────────────────────────────
 ```
 
