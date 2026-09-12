@@ -16,28 +16,19 @@
 <summary><b>Static ASCII fallback (neofetch)</b> - same intro, no animation</summary>
 
 ```
-               \   |   /
-            *   \  |  /   *
-              .  \ | /  .
-           ----.--*--.----
-              .  / | \  .
-            *   /  |  \   *
-               /   |   \
-
-            .  * SNOW *  .
-```
-
-```
-ahmed@snow ~ % whoami
------------------------------------
-Name       : Ahmed Gamal
-Role       : AI Engineer
-Focus      : Agentic RAG · Evaluation · Guardrails
-Stack      : LangGraph · Qdrant · Ragas · Python
-Languages  : English, Arabic (native)
-Prior life : Smart-contract security researcher
-Currently  : Occlusion
-Contact    : 0xahmed.gamal@gmail.com
+┌─────────────────────────────────────────────────────────────┐
+│  ahmed@snow ~ % whoami                                      │
+├─────────────────────────────────────────────────────────────┤
+│  NAME       : Ahmed Gamal                                   │
+│  ROLE       : AI Engineer                                   │
+│  FOCUS      : Agentic RAG · Evaluation · Guardrails         │
+│  STACK      : LangGraph · Qdrant (hybrid + RRF) · Ragas     │
+│              · Pydantic v2 · Python 3.12+                   │
+│  LANGUAGES  : English · Arabic (native)                     │
+│  PRIOR LIFE : Smart-contract security researcher            │
+│  CURRENT    : Occlusion — citation-grounded dental FAQ      │
+│  CONTACT    : 0xahmed.gamal@gmail.com                       │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 </details>
