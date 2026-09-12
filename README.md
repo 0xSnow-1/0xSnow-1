@@ -8,11 +8,12 @@
 
 </div>
 
-> **30-second scan:** I'm Ahmed (Snow) — an AI/LLM engineer building
+> **30-second scan:** I'm Ahmed Gamal (Snow) — an AI engineer building
 > **grounded RAG and agent systems** where every claim is verified against
 > retrieved sources, not promised by a system prompt.
 > Proof first: [`evals/` in Grounded Clinical Agent](https://github.com/0xSnow-1/Grounded-Clinical-Agent)
-> — 40-case benchmark, versioned ledger, failure-mode report.
+> — 40-case benchmark, versioned ledger, failure-mode report, plus an
+> 8-category adversarial safety suite. Open to AI Engineer roles, remote or on-site.
 
 <details>
 <summary><b>Static ASCII fallback (neofetch)</b> — same intro, no animation</summary>
@@ -30,17 +31,14 @@
 ```
 
 ```
-ahmed@snow
+ahmed@snow ~ % whoami
 -----------------------------------
-OS         : LangGraph Agent Runtime
-Host       : AI / LLM Engineer
-Kernel     : Python 3.11
-Shell      : RAG + eval-driven
-Uptime     : shipping since 2025
-Languages  : Python, Solidity
-Focus      : RAG · Agents · Evaluation
-Currently  : Grounded Clinical Agent
-Prior life : Smart-contract security
+Name       : Ahmed Gamal
+Role       : AI Engineer
+Focus      : Agentic RAG · Evaluation · Guardrails
+Stack      : LangGraph · Qdrant · Docling · Python
+Languages  : English, Arabic (native)
+Prior life : Smart-contract security researcher
 Contact    : 0xahmed.gamal@gmail.com
 ```
 
@@ -59,8 +57,11 @@ human review.
 `92.5% Hit@3` · `0.872 MRR` · `95.0% faithfulness` · `85.4% answer relevance` · `80.0% safety defense`
 — 40-case benchmark, baseline B0. Dual-LLM setup (Haiku 4.5 generates,
 Sonnet 4.6 judges) avoids self-preference bias; MedEmbed-small-v0.1 +
-Qdrant retrieval; Postgres-checkpointed LangGraph flow; FastAPI + AG-UI
-serving with a React/TypeScript client.
+Qdrant retrieval with Docling parsing; Postgres-checkpointed LangGraph flow;
+FastAPI + AG-UI serving with a React/TypeScript client.
+
+Currently going deeper: BM25 hybrid retrieval + Reciprocal Rank Fusion (RRF),
+and better eval harnesses across health and law domains.
 
 ---
 
@@ -81,8 +82,9 @@ serving with a React/TypeScript client.
 |---|---|---|
 | Orchestration | LangGraph, LangChain | — |
 | Retrieval | Qdrant, FAISS | — |
-| Serving | FastAPI, AG-UI | Streamlit |
-| Data | PostgreSQL | SQLite |
+| Parsing | Docling | — |
+| Serving | FastAPI, AG-UI | Streamlit, Docker |
+| Data | PostgreSQL | SQLite, Supabase |
 | Models | Claude (AWS Bedrock) | OpenAI, Groq, Gemini, local models |
 | Eval & observability | LLM-as-judge, Hit@3 / MRR / faithfulness, LangSmith | — |
 | Security | Slither, Foundry (smart-contract auditing) | — |
@@ -98,12 +100,24 @@ serving with a React/TypeScript client.
 3. **Security mindset, transferred.** 2025–2026 auditing Solidity contracts
    for reentrancy and access-control bugs in competitive audits —
    "find the specific way this breaks" maps directly to LLM eval design.
+4. **Built to be understood.** A year in retail sales taught me to translate
+   technical complexity into terms a non-technical person can act on.
 
 ---
 
 <div align="center">
 
+## 🌐 Socials
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed-gamal-363b47307) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/0xSnowEth) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/hamido_1x) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:0xahmed.gamal@gmail.com)
+
 📫 Best next step: open the [Grounded Clinical Agent evals](https://github.com/0xSnow-1/Grounded-Clinical-Agent)
 — or reach me at `0xahmed.gamal@gmail.com`.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0xSnow-1/0xSnow-1/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/0xSnow-1/0xSnow-1/output/github-snake.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/0xSnow-1/0xSnow-1/output/github-snake.svg" />
+</picture>
 
 </div>
