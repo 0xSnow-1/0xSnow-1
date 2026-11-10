@@ -8,8 +8,10 @@
 > citation-grounded RAG and agent systems: cited answers or safe refusal,
 > never a confident guess.
 > Proof first: [**Occlusion**](https://github.com/0xSnow-1/Occlusion)
-> - Ragas faithfulness 0.9304, Harbor safety trilogy 204/204, 132 offline
+> - Ragas faithfulness 0.9304, Harbor safety trilogy 204/204, 193 offline
 > tests green, honest backlog documented.
+> Newest: [**Sibyl**](https://github.com/0xSnow-1/sibyl), an autonomous
+> Gmail support desk.
 > Open to AI Engineer roles, remote or on-site.
 
 <details>
@@ -37,6 +39,18 @@
 
 ### Currently building
 
+[**Sibyl**](https://github.com/0xSnow-1/sibyl)
+- an autonomous Gmail support desk. It classifies each customer email,
+answers from a curated knowledge base, escalates risky cases to a person,
+and records every decision in an admin dashboard. Deterministic rules own
+replacements, exchanges, and escalations. Output validators reject truncated
+replies, missing sign-offs, and replies that mention AI.
+
+`18` golden emails · `4` checks per case · recorded runs in `evals/runs/`
+- The suite caught a release that scored 100% while sending cut-off emails.
+A real truncation bug cut off a reply over a `10'6"` board measurement.
+CI, Docker, React admin dashboard.
+
 [**Occlusion**](https://github.com/0xSnow-1/Occlusion)
 - a citation-grounded dental patient FAQ assistant over an openly licensed
 corpus (HRSA/NIDCR/CDC public domain + NHS UK OGL v3.0). Routine questions
@@ -48,7 +62,7 @@ called on refusals.
 `0.9304 faithfulness` · `0.8938 relevancy` · `0.7952 precision` · `0.9191 recall`
 - Ragas baseline v1, 78-item golden set, judge model distinct from generator.
 `204/204` Harbor safety criteria across trap-refusal, boundary-precision,
-and near-miss suites. `132` offline tests green. Live-model pass 192/202,
+and near-miss suites. `193` offline tests green. Live-model pass 192/202,
 with the 10 boundary over-refusals logged as an open calibration backlog,
 not hidden.
 
@@ -63,7 +77,8 @@ every push.
 
 | Project | Problem → mechanism | Proof |
 |---|---|---|
-| [**Occlusion**](https://github.com/0xSnow-1/Occlusion) | Patient questions must never get confident guesses → pre-LLM guardrail, hybrid retrieval with RRF, Pydantic output contracts, fail-closed citation gates | Ragas 0.9304 faithfulness; 204/204 safety criteria; 132 tests green; versioned golden set + recorded eval runs |
+| [**Sibyl**](https://github.com/0xSnow-1/sibyl) | Support mail mixes routine questions with risky ones → two-model classify-then-reply pipeline, deterministic business rules, validators that reject truncated or AI-mentioning replies | 18-case golden set with 4 checks per case; recorded runs in `evals/runs/`; failure that caught cut-off emails; CI + Docker + React admin |
+| [**Occlusion**](https://github.com/0xSnow-1/Occlusion) | Patient questions must never get confident guesses → pre-LLM guardrail, hybrid retrieval with RRF, Pydantic output contracts, fail-closed citation gates | Ragas 0.9304 faithfulness; 204/204 safety criteria; 193 tests green; versioned golden set + recorded eval runs |
 | [**NutriMind**](https://github.com/0xSnow-1/NutriMind) | Meal plans drift off-goal and miss safety flags → 6-agent supervisor graph with LLM-as-judge gate and caloric-safety interrupt | Plans scoring below 7/10 auto-regenerate; 3+ days under 1200 kcal pauses for human review; LangSmith-traced |
 | [**agentic-support-triage**](https://github.com/0xSnow-1/agentic-support-triage) | Support requests need deterministic routing → supervisor-routed agents with typed outputs and secured tools | Deterministic graders 18/20 recorded (pre-judge run) plus LLM quality judge; LangSmith tracing; FastAPI `GET /health` + `POST /triage`; file writes clamped to `tickets/` |
 | [**shipment-exception-triage-agent**](https://github.com/0xSnow-1/shipment-exception-triage-agent) | Shipment exceptions need evidence-backed routing → supervisor + 7 subagents, deterministic tools, human approve/reject/edit gate before any customer message | Single Grain "Beat Claude" Intern 011 entry; recorded demo video; artifacts in `outputs/`; offline tools run against `mock_data/` |
@@ -74,14 +89,14 @@ every push.
 
 | Area | Core - shipped with | Also used |
 |---|---|---|
-| Orchestration | LangGraph, LangChain | - |
+| Orchestration | LangGraph, LangChain | Pydantic AI |
 | Retrieval | Qdrant (hybrid dense + sparse, RRF) | FAISS |
 | Parsing | PyMuPDF, Docling | - |
 | Embeddings | fastembed | sentence-transformers |
 | Structured output | Pydantic v2 | - |
-| Serving | Streamlit, FastAPI, Docker | AG-UI |
+| Serving | Streamlit, FastAPI, Docker | React, AG-UI |
 | Data | PostgreSQL | SQLite |
-| Models | Claude (AWS Bedrock) | - |
+| Models | Claude (AWS Bedrock) | Cerebras, NVIDIA (OpenAI-compatible) |
 | Eval & observability | Ragas, Harbor, LLM-as-judge, LangSmith | - |
 | Security | Slither, Foundry (prior smart-contract audits) | - |
 
@@ -109,7 +124,8 @@ every push.
 [![Website](https://img.shields.io/badge/website-0xsnow--1.github.io-4c8eda)](https://0xsnow-1.github.io) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ahmed-gamal-363b47307) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/_0xSnowEth) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/hamido_1x) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:0xahmed.gamal@gmail.com)
 
 Best next step: open [Occlusion](https://github.com/0xSnow-1/Occlusion)
-- or reach me at `0xahmed.gamal@gmail.com`.
+for measured safety, or [Sibyl](https://github.com/0xSnow-1/sibyl) as the
+newest work. Reach me at `0xahmed.gamal@gmail.com`.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/0xSnow-1/0xSnow-1/output/github-snake-dark.svg" />
