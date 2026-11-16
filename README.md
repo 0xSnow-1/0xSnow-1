@@ -44,7 +44,7 @@ I build citation-grounded RAG and agent systems: cited answers or safe refusal, 
 
 ## Stack
 
-Python, LangGraph and LangChain, Qdrant hybrid retrieval, Pydantic v2, FastAPI, Docker, Streamlit and React; Ragas, Harbor, LLM-as-judge, LangSmith; Claude on AWS Bedrock with Cerebras and NVIDIA endpoints.
+Python, LangGraph and LangChain, Qdrant hybrid retrieval, Pydantic v2, FastAPI, PostgreSQL and SQLite, Docker, Streamlit and React; Ragas, Harbor, LLM-as-judge, LangSmith; Claude on AWS Bedrock with Cerebras and NVIDIA endpoints.
 
 ## How I build
 
